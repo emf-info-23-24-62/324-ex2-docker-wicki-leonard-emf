@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: mini-notes:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/usr/src/app/data
+    environment:
+      - PORT=3000
+    restart: unless-stopped
