@@ -32,5 +32,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.ACR_LOGIN_SERVER }}/mini-notes:latest
-            ${{ secrets.ACR_LOGIN_SERVER }}/mini-notes:${{ github.sha }}
+            ${{ secrets.ACR_LOGIN_SERVER }}/mini-notes-leo-wicki:latest
+            ${{ secrets.ACR_LOGIN_SERVER }}/mini-notes-leo-wicki:${{ github.sha }}
